@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="红球"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="至少选6个红球"
+                android:textColor="@color/window_bg" />
+        </LinearLayout>
+
+        <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+            android:id="@+id/red_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="6"
+            android:scrollbars="none" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="篮球"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="至少选1个红球"
+                android:textColor="@color/window_bg" />
+        </LinearLayout>
+
+        <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+            android:id="@+id/blue_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="6"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</ScrollView>

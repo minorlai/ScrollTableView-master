@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20160831-028期"
+                android:textColor="@color/maincolor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/view_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="万位"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_wan_quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="全"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_wan_da"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="大"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_wan_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="小"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_wan_ji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="奇"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_wan_ou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="偶"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_wan_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="清"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+                    android:id="@+id/wan_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="千位"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_qian_quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="全"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_qian_da"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="大"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_qian_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="小"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_qian_ji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="奇"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_qian_ou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="偶"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_qian_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="清"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+                    android:id="@+id/qian_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="百位"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_bai_quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="全"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_bai_da"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="大"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_bai_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="小"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_bai_ji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="奇"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_bai_ou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="偶"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_bai_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="清"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+                    android:id="@+id/bai_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="十位"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_shi_quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="全"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shi_da"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="大"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shi_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="小"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shi_ji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="奇"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shi_ou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="偶"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_shi_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="清"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+                    android:id="@+id/shi_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="个位"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_ge_quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="全"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_ge_da"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="大"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_ge_xiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="小"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_ge_ji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="奇"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_ge_ou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="偶"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_ge_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_click_style"
+                        android:text="清"
+                        android:textColor="@color/maincolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.loopeer.android.librarys.horizontalverticalscrollview.view.MyGridView
+                    android:id="@+id/ge_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/price_order_bottom_item" />
+
+    </LinearLayout>
+
+</ScrollView>

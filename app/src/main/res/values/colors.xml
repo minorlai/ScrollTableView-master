@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="maincolor">#ededed</color>
+    <color name="itemcolor_nor">#fffcf9</color>
+    <color name="itemcolor_pre">#eeeeee</color>
+    <color name="header">#e25a5a</color>
+    <color name="textcolor">#bfbfbf</color>
+    <color name="savetextcolor">#669F6A</color>
+    <color name="savetextbg">#2B6731</color>
+    <color name="itembg">#FF4E544E</color>
+    <color name="girdview_item">#FFCFCECE</color>
+    <color name="price_order_bottom">#FF707170</color>
+
+    <color name="orange">#f89636</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#3399CC</color>
+    <color name="green">#A5CD4E</color>
+    <color name="gray">#ff789089</color>
+    <color name="black">#000000</color>
+    <color name="red">#e25a5a</color>
+    <color name="pink">#c54141</color>
+    <color name="silery">#CCCCCC</color>
+    <color name="bgcolor">#ededed</color>
+    <color name="light_white">#c8ffffff</color>
+    <color name="window_bg">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="texttitlecolor">#f4ae00</color>
+    <color name="chengse">#D1C98B</color>
+    <color name="bantransparent">#A7C0DC</color>
+
+    <color name="global_bg">#eeeff3</color>
+    <color name="menu_bg">#2A3235</color>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+</resources>

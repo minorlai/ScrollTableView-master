@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="期"
+            android:textColor="@color/table_item_bg_select_color"
+            android:textSize="16sp" />
+
+        <com.loopeer.android.librarys.scrolltable.IHorizontalScrollView
+            android:id="@+id/scroll_header_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_top_title_height"
+            android:layout_marginLeft="25dp">
+
+            <com.loopeer.android.librarys.scrolltable.TopTitleView
+                android:id="@+id/header_horizontal"
+                android:layout_width="wrap_content"
+                android:background="@color/table_divider_color"
+                android:layout_height="match_parent" />
+
+        </com.loopeer.android.librarys.scrolltable.IHorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <com.loopeer.android.librarys.scrolltable.VerticalScrollView
+            android:id="@+id/scroll_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.loopeer.android.librarys.scrolltable.LeftTitleView
+                    android:id="@+id/header_vertical"
+                    android:layout_width="@dimen/table_left_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="24dp" />
+
+                <com.loopeer.android.librarys.scrolltable.IHorizontalScrollView
+                    android:id="@+id/scroll_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.loopeer.android.librarys.scrolltable.CustomTableView
+                        android:id="@+id/content_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/table_default_margin_top" />
+
+                </com.loopeer.android.librarys.scrolltable.IHorizontalScrollView>
+            </LinearLayout>
+
+        </com.loopeer.android.librarys.scrolltable.VerticalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

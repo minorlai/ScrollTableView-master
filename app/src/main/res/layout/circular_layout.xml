@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="10sp"
+        android:textColor="#0cb0fd"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular_rect"
+        android:text="标"/>
+
+    <TextView
+        android:id="@+id/tv_qian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="10sp"
+        android:textColor="#0cb0fd"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular"
+        android:text="签"/>
+
+    <Button
+        android:id="@+id/btn_style"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#cba055"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular"
+        android:text="号"/>
+
+    <Button
+        android:id="@+id/btn_number"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#cba055"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular"
+        android:text="码"/>
+    <Button
+        android:id="@+id/btn_threed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#cba055"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular"
+        android:text="福"/>
+
+</LinearLayout>

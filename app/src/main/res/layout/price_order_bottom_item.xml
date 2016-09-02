@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/price_order_bottom"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_bonus_rect"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="奖金:1.00"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/btn_bonus"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_sub"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@color/header"
+            android:text="—"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/btn_sub"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/et_number"
+            android:background="@color/header"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/layout_center"
+        android:text="倍"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_price"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_price_rect">
+
+        <TextView
+            android:id="@+id/btn_bottom_price"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:text="元"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btn_bottom_price"
+            android:text="﹀"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
